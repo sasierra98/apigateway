@@ -10,7 +10,7 @@ const petResolver={
     },    
 
     Mutation:{
-        createPet: async(_, { input }, { dataSources }) => {
+        createPet: async(_,__, { input }, { dataSources }) => {
             const inputPet={
                 id: input.id,
                 imgBin64: input.imgBin64,
