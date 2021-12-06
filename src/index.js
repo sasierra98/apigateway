@@ -2,8 +2,8 @@ const { ApolloServer } = require('apollo-server');
 
 const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
-const AuthAPI = require('./datasources/auth_api');
-const PetsApi = require('./datasources/pets_api');
+const AuthAPI = require('./dataSources/auth_api');
+const PetsApi = require('./dataSources/pets_api');
 const authentication = require('./utils/authentication');
 
 const server = new ApolloServer({
