@@ -2,7 +2,7 @@ const { gql } = require('apollo-server');
 
 const petTypeDefs = gql `
     type Pet{
-        id: Int!
+        id: String!
         imgBin64: String!
         descripcion: String!
         fecha: String!
@@ -10,7 +10,7 @@ const petTypeDefs = gql `
         telefono: Int!
     }
     input PetInput{
-        id: Int!
+        id: String!
         imgBin64: String!
         descripcion: String!
         fecha: String!
